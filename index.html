@@ -1,20 +1,343 @@
 <!DOCTYPE html>
+<!-- Created by Rifqi -->
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Website dengan Gambar</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <h1>Halo, Dunia!</h1>
-  <p>Ini adalah website dengan gambar di GitHub Pages.</p>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | Rifqi</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Font awesome import -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-  <img src="images/office.png" alt="Gambar Contoh" width="300" />
+<!-- Bootstrap import -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
 
-  <br /><br />
-  <button onclick="greet()">Klik Saya</button>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
+<body data-aos-easing="ease" data-aos-duration="400" data-aos-delay="0">
+  <header class="header">
+      <a href="#" class="logo">Port<span>folio</span></a>
+
+      <i class="fa-solid fa-bars" id="menu-icon"></i>
+
+      <nav class="navbar">
+        <a href="#home" class="active">Home</a>
+        <a href="#services">Services</a>
+        <a href="#education">Education</a>
+        <a href="#project">Project</a>
+        <a href="#contact">Contact</a>
+      </nav>
+  </header>
+
+  <section class="home" id="home">
+    <div class="home-img" data-aos="fade-right" data-aos-duration="1000">
+      <img src="images/Logo-Baku-UNEJ-2020-Super-High-Res.png" alt="">
+    </div>
+    <div class="home-content">
+      <h1>Hi, It's <span>Rifqi</span></h1>
+      <h3 class="typing-text" data-aos="fade-left">I'am a <span></span></h3>
+      <p data-aos="fade-up-left">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores expedita, possimus nemo fuga voluptatibus nam vitae perferendis aliquid officia est.</p>
+      <div class="social-icon" data-aos="fade-up"
+      data-aos-duration="1000">
+        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        <a href="#"><i class="fa-brands fa-github"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+      </div>
+
+      <div class="home-button" data-aos="zoom-in" data-aos-duration="1000">
+        <a href="#" class="btn">Contact Me <i class="fa-solid fa-message"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-services" id="services">
+    <div class="container">
+      <div class="row justify-content-center text-center">
+        <div class="col-md-10 col-lg-8">
+          <div class="header-section">
+            <h2 class="title"><span>Services</span></h2>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 col-lg-4">
+          <div class="single-services" data-aos="zoom-in-up" data-aos-duration="1000">
+            <div class="part-1">
+              <i class="fa-brands fa-500px"></i>
+              <h3 class="title">Web Development</h3>
+            </div>
+            <div class="part-2">
+              <p class="description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus, facilis!</p>
+              <a href="#"><i class="fa-solid fa-circle-arrow-right"></i>Read More</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="single-services" data-aos="zoom-in-up" data-aos-duration="1000">
+            <div class="part-1">
+              <i class="fab fa-angellist"></i>
+              <h3 class="title">Software Development</h3>
+            </div>
+            <div class="part-2">
+              <p class="description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus, facilis!</p>
+              <a href="#"><i class="fa-solid fa-circle-arrow-right"></i>Read More</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="single-services" data-aos="zoom-in-up" data-aos-duration="1000">
+            <div class="part-1">
+              <i class="fas fa-award"></i>
+              <h3 class="title">Freelancer</h3>
+            </div>
+            <div class="part-2">
+              <p class="description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus, facilis!</p>
+              <a href="#"><i class="fa-solid fa-circle-arrow-right"></i>Read More</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="single-services" data-aos="zoom-in-up" data-aos-duration="1000">
+            <div class="part-1">
+              <i class="fab fa-asymmetrik"></i>
+              <h3 class="title">Manager</h3>
+            </div>
+            <div class="part-2">
+              <p class="description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus, facilis!</p>
+              <a href="#"><i class="fa-solid fa-circle-arrow-right"></i>Read More</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="single-services" data-aos="zoom-in-up" data-aos-duration="1000">
+            <div class="part-1">
+              <i class="fas fa-broadcast-tower"></i>
+              <h3 class="title">Software Development</h3>
+            </div>
+            <div class="part-2">
+              <p class="description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus, facilis!</p>
+              <a href="#"><i class="fa-solid fa-circle-arrow-right"></i>Read More</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="single-services" data-aos="zoom-in-up" data-aos-duration="1000">
+            <div class="part-1">
+              <i class="fab fa-canadian-maple-leaf"></i>
+              <h3 class="title">Content Creator</h3>
+            </div>
+            <div class="part-2">
+              <p class="description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus, facilis!</p>
+              <a href="#"><i class="fa-solid fa-circle-arrow-right"></i>Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="education" id="education">
+    <div class="container">
+      <div class="row justify-content-center text-center">
+        <div class="col-md-10 col-lg-8">
+          <div class="header-section">
+            <h2 class="title"><span>Education</span></h2>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="timeline">
+      <div class="timeline-container right">
+        <div class="content" data-aos="fade-left" data-aos-duration="1000">
+          <div class="tag">
+            <h2>Cooming Soon</h2>
+          </div>
+          <div class="desc">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur esse autem natus, eaque est nobis.</p>
+          </div>
+        </div>
+      </div>
+      <div class="timeline-container left">
+        <div class="content" data-aos="fade-right" data-aos-duration="1000">
+          <div class="tag">
+            <h2>University</h2>
+          </div>
+          <div class="desc">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur esse autem natus, eaque est nobis.</p>
+          </div>
+        </div>
+      </div>
+      <div class="timeline-container right">
+        <div class="content" data-aos="fade-left" data-aos-duration="1000">
+          <div class="tag">
+            <h2>High School</h2>
+          </div>
+          <div class="desc">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur esse autem natus, eaque est nobis.</p>
+          </div>
+        </div>
+      </div>
+      <div class="timeline-container left">
+        <div class="content" data-aos="fade-right" data-aos-duration="1000">
+          <div class="tag">
+            <h2>University</h2>
+          </div>
+          <div class="desc">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur esse autem natus, eaque est nobis.</p>
+          </div>
+        </div>
+      </div>
+      <div class="timeline-container right">
+        <div class="content" data-aos="fade-left" data-aos-duration="1000">
+          <div class="tag">
+            <h2>University</h2>
+          </div>
+          <div class="desc">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur esse autem natus, eaque est nobis.</p>
+          </div>
+        </div>
+      </div>
+      <div class="timeline-container left">
+        <div class="content" data-aos="fade-right" data-aos-duration="1000">
+          <div class="tag">
+            <h2>University</h2>
+          </div>
+          <div class="desc">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur esse autem natus, eaque est nobis.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="project" id="project">
+    <div class="container">
+      <div class="row justify-content-center text-center">
+        <div class="col-md-10 col-lg-8">
+          <div class="header-section">
+            <h2 class="title"><span>Projects</span></h2>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-md-4 col-card-1">
+          <div class="card mb-3" data-aos="zoom-in-up" data-aos-duration="1000">
+            <img src="img/office.png" class="card-img-top" alt="">
+            <h5 class="car-title text-light">
+              <img src="images/office.png" class="project-icon" alt="">
+              <br>Planning
+            </h5>
+            <a href="#" class="btn btn-light">Go Somewhere</a>
+          </div>
+        </div>
+        <div class="col-12 col-md-4 col-card-2">
+          <div class="card mb-3"data-aos="zoom-in-up" data-aos-duration="1000">
+            <img src="img/office.png" class="card-img-top" alt="">
+            <h5 class="car-title text-light">
+              <img src="images/office.png" class="project-icon" alt="">
+              <br>Ideas
+            </h5>
+            <a href="#" class="btn btn-light">Go Somewhere</a>
+          </div>
+        </div>
+        <div class="col-12 col-md-4 col-card-3">
+          <div class="card mb-3" data-aos="zoom-in-up" data-aos-duration="1000">
+            <img src="img/office.png" class="card-img-top" alt="">
+            <h5 class="car-title text-light">
+              <img src="images/office.png" class="project-icon" alt="">
+              <br>Keyword
+            </h5>
+            <a href="#" class="btn btn-light">Go Somewhere</a>
+          </div>
+        </div>
+        <div class="col-12 col-md-4 col-card-4">
+          <div class="card mb-3" data-aos="zoom-in-up" data-aos-duration="1000">
+            <img src="img/office.png" class="card-img-top" alt="">
+            <h5 class="car-title text-light">
+              <img src="images/office.png" class="project-icon" alt="">
+              <br>Strategy
+            </h5>
+            <a href="#" class="btn btn-light">Go Somewhere</a>
+          </div>
+        </div>
+        <div class="col-12 col-md-4 col-card-5">
+          <div class="card mb-3" data-aos="zoom-in-up" data-aos-duration="1000">
+            <img src="img/office.png" class="card-img-top" alt="">
+            <h5 class="car-title text-light">
+              <img src="images/office.png" class="project-icon" alt="">
+              <br>Artificial Intelligence
+            </h5>
+            <a href="#" class="btn btn-light">Go Somewhere</a>
+          </div>
+        </div>
+        <div class="col-12 col-md-4 col-card-6">
+          <div class="card mb-3" data-aos="zoom-in-up" data-aos-duration="1000">
+            <img src="img/office.png" class="card-img-top" alt="">
+            <h5 class="car-title text-light">
+              <img src="images/office.png" class="project-icon" alt="">
+              <br>Copyright
+            </h5>
+            <a href="#" class="btn btn-light">Go Somewhere</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="row justify-content-center text-center">
+        <div class="col-md-10 col-lg-8">
+          <div class="header-section">
+            <h2 class="title"><span>Contact</span></h2>
+          </div>
+        </div>
+      </div>
+
+      <form action="">
+        <div class="input-box">
+          <input type="text" placeholder="Name">
+          <input type="email" placeholder="Email" required>
+          <input type="number" placeholder="Phone Number" required>
+          <input type="subject" placeholder="Subject" required>
+        </div>
+        <textarea name="" id="" rows="10" cols="30" placeholder="Your Message"></textarea>
+        <input type="submit" placeholder="Submit" class="home-button">
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="social">
+      <a href="#"><i class="fa-brands fa-youtube"></i></a>
+      <a href="#"><i class="fa-brands fa-github"></i></a>
+      <a href="#"><i class="fa-brands fa-instagram"></i></a>
+      <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+    </div>
+    <ul class="list">
+      <li><a href="#">FAQ</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="#">Privacy Policy</a></li>
+    </ul>
+    <p class="copyright">
+      © Rifqi Ardiyansyah | All Right Reserved
+    </p>
+  </footer>
+
+  <!-- wow animation -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
   <script src="script.js"></script>
 </body>
-</html>
+<html>
